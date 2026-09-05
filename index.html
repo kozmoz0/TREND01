@@ -91,7 +91,7 @@ header{
         rgba(0,0,0,.78) 40%,
         rgba(0,0,0,.15) 100%
     ),
-    url("https://raw.githubusercontent.com/kozmoz0/TREND01/main/17085cf3-6461-4071-933c-ab5a8064e739.jpeg");
+    url("https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1800&q=90");
 
     background-size:cover;
     background-position:center;
@@ -383,72 +383,6 @@ header{
     color:#ddd;
 }
 
-/* ================= GALLERY ================= */
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-    max-width:1000px;
-    margin:0 auto;
-}
-
-.gallery-item{
-    position:relative;
-    height:400px;
-    overflow:hidden;
-    border:1px solid #292929;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.gallery-item:hover{
-    border-color:#6e532f;
-    transform:translateY(-3px);
-}
-
-.gallery-item img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.5s;
-}
-
-.gallery-item:hover img{
-    transform:scale(1.08);
-}
-
-.gallery-overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.4);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    opacity:0;
-    transition:.3s;
-}
-
-.gallery-item:hover .gallery-overlay{
-    opacity:1;
-}
-
-.gallery-text{
-    text-align:center;
-    color:#fff;
-    z-index:10;
-}
-
-.gallery-text h3{
-    font-size:24px;
-    margin-bottom:10px;
-}
-
-.gallery-text p{
-    font-size:13px;
-    color:#ddd;
-}
-
 /* ================= CONTACT ================= */
 
 .contact{
@@ -583,10 +517,6 @@ footer{
         height:300px;
     }
 
-    .gallery{
-        grid-template-columns:1fr;
-    }
-
     .footer-grid{
         grid-template-columns:1fr 1fr;
     }
@@ -701,14 +631,6 @@ footer{
         height:190px;
     }
 
-    .gallery{
-        grid-template-columns:1fr;
-    }
-
-    .gallery-item{
-        height:300px;
-    }
-
     .contact-inner{
         flex-direction:column;
         text-align:center;
@@ -794,7 +716,7 @@ footer{
     <a href="#anasayfa" onclick="closeMenu()">ANA SAYFA</a>
     <a href="#urunler" onclick="closeMenu()">ÜRÜNLER</a>
     <a href="#kategoriler" onclick="closeMenu()">KATEGORİLER</a>
-    <a href="#galeri" onclick="closeMenu()">GALERİ</a>
+    <a href="#yenisezon" onclick="closeMenu()">YENİ SEZON</a>
     <a href="#iletisim" onclick="closeMenu()">İLETİŞİM</a>
 
 </div>
@@ -849,8 +771,8 @@ footer{
                 ALIŞVERİŞE BAŞLA
             </a>
 
-            <a href="#galeri" class="btn btn-outline">
-                GALERİYİ KEŞFET
+            <a href="#yenisezon" class="btn btn-outline">
+                YENİ SEZON
             </a>
 
         </div>
@@ -937,7 +859,7 @@ footer{
 
             <div class="product-img">
 
-                <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/4ab7198d-5a3c-44b7-9eb2-9cc10d9621bf.jpeg">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85">
 
                 <div class="favorite">♡</div>
 
@@ -945,12 +867,12 @@ footer{
 
             <div class="product-info">
 
-                <h3>BOSS MARKA TİŞÖRT</h3>
+                <h3>OVERSIZE BASIC TİŞÖRT</h3>
 
                 <div class="price">₺750,00</div>
 
                 <button class="order"
-                onclick="order('BOSS MARKA TİŞÖRT','750 TL')">
+                onclick="order('OVERSIZE BASIC TİŞÖRT','750 TL')">
                     SİPARİŞ VER
                 </button>
 
@@ -965,7 +887,118 @@ footer{
 
             <div class="product-img">
 
-                <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/58b2b7c9-4589-481d-b168-984750ec866b.jpeg">
+                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=700&q=85">
+
+                <div class="favorite">♡</div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>KETEN GÖMLEK</h3>
+
+                <div class="price">₺750,00</div>
+
+                <button class="order"
+                onclick="order('KETEN GÖMLEK','750 TL')">
+                    SİPARİŞ VER
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ÜRÜN 3 -->
+
+        <div class="product">
+
+            <div class="product-img">
+
+                <img src="https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=700&q=85">
+
+                <div class="favorite">♡</div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>PARAŞÜT PANTOLON</h3>
+
+                <div class="price">₺750,00</div>
+
+                <button class="order"
+                onclick="order('PARAŞÜT PANTOLON','750 TL')">
+                    SİPARİŞ VER
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ÜRÜN 4 -->
+
+        <div class="product">
+
+            <div class="product-img">
+
+                <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=700&q=85">
+
+                <div class="favorite">♡</div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>PREMİUM SWEATSHIRT</h3>
+
+                <div class="price">₺750,00</div>
+
+                <button class="order"
+                onclick="order('PREMİUM SWEATSHIRT','750 TL')">
+                    SİPARİŞ VER
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ÜRÜN 5 -->
+
+        <div class="product">
+
+            <div class="product-img">
+
+                <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=85">
+
+                <div class="favorite">♡</div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>İÇİ KÜRKLÜ CEKET</h3>
+
+                <div class="price">₺750,00</div>
+
+                <button class="order"
+                onclick="order('İÇİ KÜRKLÜ CEKET','750 TL')">
+                    SİPARİŞ VER
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ÜRÜN 6 - YENİ -->
+
+        <div class="product">
+
+            <div class="product-img">
+
+                <img src="17085cf3-6461-4071-933c-ab5a8064e739.jpeg">
 
                 <div class="favorite">♡</div>
 
@@ -986,14 +1019,13 @@ footer{
 
         </div>
 
-
-        <!-- ÜRÜN 3 -->
+        <!-- ÜRÜN 7 - YENİ -->
 
         <div class="product">
 
             <div class="product-img">
 
-                <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/591b23b5-5e11-4fcf-85b5-b8b6b49f46f1.jpeg">
+                <img src="4ab7198d-5a3c-44b7-9eb2-9cc10d9621bf.jpeg">
 
                 <div class="favorite">♡</div>
 
@@ -1001,12 +1033,12 @@ footer{
 
             <div class="product-info">
 
-                <h3>CALVİN KLEİN MARKA TİŞÖRT</h3>
+                <h3>PREMIUM KAP</h3>
 
                 <div class="price">₺750,00</div>
 
                 <button class="order"
-                onclick="order('CALVİN KLEİN MARKA TİŞÖRT','750 TL')">
+                onclick="order('PREMIUM KAP','750 TL')">
                     SİPARİŞ VER
                 </button>
 
@@ -1014,14 +1046,13 @@ footer{
 
         </div>
 
-
-        <!-- ÜRÜN 4 -->
+        <!-- ÜRÜN 8 - YENİ -->
 
         <div class="product">
 
             <div class="product-img">
 
-                <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/5ae9c328-04ed-47cd-95cd-f834e8a87860.jpeg">
+                <img src="58b2b7c9-4589-481d-b168-984750ec866b.jpeg">
 
                 <div class="favorite">♡</div>
 
@@ -1029,12 +1060,12 @@ footer{
 
             <div class="product-info">
 
-                <h3>HERMES MARKA TİŞÖRT</h3>
+                <h3>SLIM FIT PANTOLON</h3>
 
                 <div class="price">₺750,00</div>
 
                 <button class="order"
-                onclick="order('HERMES MARKA TİŞÖRT','750 TL')">
+                onclick="order('SLIM FIT PANTOLON','750 TL')">
                     SİPARİŞ VER
                 </button>
 
@@ -1042,14 +1073,13 @@ footer{
 
         </div>
 
-
-        <!-- ÜRÜN 5 -->
+        <!-- ÜRÜN 9 - YENİ -->
 
         <div class="product">
 
             <div class="product-img">
 
-                <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/6f2c085f-d780-4d89-8277-2005c05d0fbd.jpeg">
+                <img src="591b23b5-5e11-4fcf-85b5-b8b6b49f46f1.jpeg">
 
                 <div class="favorite">♡</div>
 
@@ -1057,12 +1087,66 @@ footer{
 
             <div class="product-info">
 
-                <h3>RESİMLİ TİŞÖRT</h3>
+                <h3>POLO GÖMLEGI</h3>
 
                 <div class="price">₺750,00</div>
 
                 <button class="order"
-                onclick="order('RESİMLİ TİŞÖRT','750 TL')">
+                onclick="order('POLO GÖMLEGI','750 TL')">
+                    SİPARİŞ VER
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ÜRÜN 10 - YENİ -->
+
+        <div class="product">
+
+            <div class="product-img">
+
+                <img src="5ae9c328-04ed-47cd-95cd-f834e8a87860.jpeg">
+
+                <div class="favorite">♡</div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>CASUAL CEKET</h3>
+
+                <div class="price">₺750,00</div>
+
+                <button class="order"
+                onclick="order('CASUAL CEKET','750 TL')">
+                    SİPARİŞ VER
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ÜRÜN 11 - YENİ -->
+
+        <div class="product">
+
+            <div class="product-img">
+
+                <img src="6f2c085f-d780-4d89-8277-2005c05d0fbd.jpeg">
+
+                <div class="favorite">♡</div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>DENİM CEKET</h3>
+
+                <div class="price">₺750,00</div>
+
+                <button class="order"
+                onclick="order('DENİM CEKET','750 TL')">
                     SİPARİŞ VER
                 </button>
 
@@ -1073,7 +1157,7 @@ footer{
     </div>
 
 
-    <a href="#galeri" class="all-products">
+    <a href="#kategoriler" class="all-products">
         TÜM ÜRÜNLERİ GÖR
     </a>
 
@@ -1087,10 +1171,10 @@ footer{
     <div class="section-head">
 
         <div class="section-label">
-            TREND01
+            ÜRÜN KATEGORİLERİ
         </div>
 
-        <h2>KATEGORİLER</h2>
+        <h2>KATEGORİLERİ KEŞFET</h2>
 
         <div class="gold-line"></div>
 
@@ -1100,32 +1184,10 @@ footer{
 
         <div class="category">
 
-            <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/870f175f-16c3-4e51-a9e4-6711a36cfd06.jpeg">
+            <img src="https://images.unsplash.com/photo-1577215645519-17f3f869db19?auto=format&fit=crop&w=500&q=85" alt="Tişört">
 
             <div class="category-name">
                 <strong>TİŞÖRTLER</strong>
-                <span>Tüm Boyutlar Mevcut</span>
-            </div>
-
-        </div>
-
-        <div class="category">
-
-            <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/ca7cfe85-0bd4-477e-b32a-2e54c0f9e5c9.jpeg">
-
-            <div class="category-name">
-                <strong>GÖMLEKLER</strong>
-                <span>Kaliteli Kumaşlar</span>
-            </div>
-
-        </div>
-
-        <div class="category">
-
-            <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/17085cf3-6461-4071-933c-ab5a8064e739.jpeg">
-
-            <div class="category-name">
-                <strong>PANTOLONLAR</strong>
                 <span>Rahat ve Şık</span>
             </div>
 
@@ -1133,84 +1195,55 @@ footer{
 
         <div class="category">
 
-            <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/4ab7198d-5a3c-44b7-9eb2-9cc10d9621bf.jpeg">
+            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=500&q=85" alt="Gömlek">
 
             <div class="category-name">
-                <strong>CEKET/KAZAK</strong>
-                <span>Kış Sezonundan</span>
+                <strong>GÖMLEKLER</strong>
+                <span>Resmi ve Casual</span>
             </div>
 
         </div>
 
         <div class="category">
 
-            <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/58b2b7c9-4589-481d-b168-984750ec866b.jpeg">
+            <img src="https://images.unsplash.com/photo-1542272604-787c62d465d1?auto=format&fit=crop&w=500&q=85" alt="Pantolon">
+
+            <div class="category-name">
+                <strong>PANTOLONLAR</strong>
+                <span>Konforlu Kesim</span>
+            </div>
+
+        </div>
+
+        <div class="category">
+
+            <img src="https://images.unsplash.com/photo-1551028719-00167b16ebc5?auto=format&fit=crop&w=500&q=85" alt="Ceket">
+
+            <div class="category-name">
+                <strong>CEKETLER</strong>
+                <span>Şık ve Koruyucu</span>
+            </div>
+
+        </div>
+
+        <div class="category">
+
+            <img src="https://images.unsplash.com/photo-1574180045827-48cf47b1ddf1?auto=format&fit=crop&w=500&q=85" alt="Sweatshirt">
+
+            <div class="category-name">
+                <strong>SWEATSHIRT</strong>
+                <span>Rahat Giyim</span>
+            </div>
+
+        </div>
+
+        <div class="category">
+
+            <img src="https://images.unsplash.com/photo-1528148343865-15618c90dc20?auto=format&fit=crop&w=500&q=85" alt="Aksesuar">
 
             <div class="category-name">
                 <strong>AKSESUARLAR</strong>
                 <span>Tamamlayıcı Ürünler</span>
-            </div>
-
-        </div>
-
-        <div class="category">
-
-            <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/591b23b5-5e11-4fcf-85b5-b8b6b49f46f1.jpeg">
-
-            <div class="category-name">
-                <strong>YENİ SEZON</strong>
-                <span>Trend Ürünler</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= GALLERY ================= -->
-
-<section class="section" id="galeri">
-
-    <div class="section-head">
-
-        <div class="section-label">
-            TREND01
-        </div>
-
-        <h2>ÖZEL KOLEKSİYON GALERİ</h2>
-
-        <div class="gold-line"></div>
-
-    </div>
-
-    <div class="gallery">
-
-        <!-- GALERİ 1 -->
-        <div class="gallery-item">
-
-            <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/870f175f-16c3-4e51-a9e4-6711a36cfd06.jpeg" alt="Premium Koleksiyon">
-
-            <div class="gallery-overlay">
-                <div class="gallery-text">
-                    <h3>Premium Seçkisi</h3>
-                    <p>Sezon Trendleri</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- GALERİ 2 -->
-        <div class="gallery-item">
-
-            <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/ca7cfe85-0bd4-477e-b32a-2e54c0f9e5c9.jpeg" alt="Dizayner Koleksiyonu">
-
-            <div class="gallery-overlay">
-                <div class="gallery-text">
-                    <h3>Dizayner Koleksiyonu</h3>
-                    <p>Eksklusif Tasarımlar</p>
-                </div>
             </div>
 
         </div>
@@ -1228,20 +1261,23 @@ footer{
 
         <div class="contact-text">
 
-            <h2>Hemen Sipariş Ver</h2>
+            <h2>BİZE ULAŞIN</h2>
 
-            <p>WhatsApp üzerinden kolayca ürün seçip sipariş verebilirsin. En kısa sürede yardımcı olacağız.</p>
+            <p>
+                Sorularınız, önerileriniz veya sipariş konularında bize WhatsApp veya Instagram üzerinden ulaşabilirsiniz. 
+                TREND01 ailesi olarak her zaman sizin hizmetinizdeyiz. Hızlı ve güvenilir hizmet için bize mesaj atın.
+            </p>
 
         </div>
 
         <div class="contact-buttons">
 
-            <a href="https://wa.me/905554443322" class="contact-btn whatsapp">
-                💬 WhatsApp ile Sipariş Ver
+            <a href="https://wa.me/90XXXXXXXXX" class="contact-btn whatsapp" target="_blank">
+                WhatsApp ile İlet
             </a>
 
-            <a href="https://instagram.com/trend01giyim" class="contact-btn instagram">
-                📸 Instagram'da Takip Et
+            <a href="https://instagram.com/trend01giyim" class="contact-btn instagram" target="_blank">
+                Instagram'da Takip Et
             </a>
 
         </div>
@@ -1259,32 +1295,31 @@ footer{
 
         <div class="footer-column">
 
-            <h3>TREND01</h3>
+            <img src="Logo.png" class="footer-logo" alt="TREND01">
 
-            <p style="color:#999; font-size:12px; line-height:1.6;">
-                Modern ve şık erkek giyim koleksiyonuyla tarzını yansıt. Kalite ve moda bir arada.
+            <p style="color:#999; font-size:12px;">
+                Modern, şık ve kaliteli erkek giyim ürünleriyle TREND01 ailesine katıl.
             </p>
 
         </div>
 
         <div class="footer-column">
 
-            <h3>MENU</h3>
+            <h3>ÜRÜNLER</h3>
 
-            <a href="#anasayfa">Ana Sayfa</a>
-            <a href="#urunler">Ürünler</a>
+            <a href="#urunler">Tüm Ürünler</a>
             <a href="#kategoriler">Kategoriler</a>
-            <a href="#galeri">Galeri</a>
+            <a href="#yenisezon">Yeni Sezon</a>
 
         </div>
 
         <div class="footer-column">
 
-            <h3>BİLGİ</h3>
+            <h3>KURUMSAL</h3>
 
-            <a href="#">Kargo Bilgisi</a>
-            <a href="#">İade Şartları</a>
+            <a href="#">Hakkımızda</a>
             <a href="#">Gizlilik Politikası</a>
+            <a href="#">Şartlar ve Koşullar</a>
 
         </div>
 
@@ -1292,18 +1327,16 @@ footer{
 
             <h3>İLETİŞİM</h3>
 
-            <a href="https://wa.me/905554443322">WhatsApp</a>
-            <a href="https://instagram.com/trend01giyim">Instagram</a>
-            <a href="mailto:info@trend01.com">Email</a>
+            <a href="#">info@trend01.com</a>
+            <a href="#">+90 XXX XXX XXXX</a>
+            <a href="#">Instagram</a>
 
         </div>
 
     </div>
 
     <div class="footer-bottom">
-
-        <p>&copy; 2026 TREND01. Tüm Hakları Saklıdır. | Modern Erkek Giyimi</p>
-
+        <p>&copy; 2024 TREND01 | Tarzını Yansıt. Kendini Göster. | Tüm Hakları Saklıdır.</p>
     </div>
 
 </footer>
@@ -1311,21 +1344,21 @@ footer{
 <script>
 
 function openMenu(){
-    document.getElementById("mobileMenu").classList.add("active");
-    document.getElementById("overlay").classList.add("active");
+    document.getElementById('mobileMenu').classList.add('active');
+    document.getElementById('overlay').classList.add('active');
 }
 
 function closeMenu(){
-    document.getElementById("mobileMenu").classList.remove("active");
-    document.getElementById("overlay").classList.remove("active");
+    document.getElementById('mobileMenu').classList.remove('active');
+    document.getElementById('overlay').classList.remove('active');
 }
 
-document.getElementById("overlay").addEventListener("click", closeMenu);
+document.getElementById('overlay').addEventListener('click', closeMenu);
 
-function order(productName, price){
-    const message = `Merhaba! ${productName} için sipariş talebim var. Fiyat: ${price}`;
-    const whatsappUrl = `https://wa.me/905554443322?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+function order(product, price){
+    const message = `Merhaba! ${product} (${price}) ürününü sipariş etmek istiyorum.`;
+    const whatsappLink = `https://wa.me/90XXXXXXXXX?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
 }
 
 </script>
