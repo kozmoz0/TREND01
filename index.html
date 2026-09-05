@@ -383,6 +383,72 @@ header{
     color:#ddd;
 }
 
+/* ================= GALLERY ================= */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.gallery-item{
+    position:relative;
+    height:400px;
+    overflow:hidden;
+    border:1px solid #292929;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.gallery-item:hover{
+    border-color:#6e532f;
+    transform:translateY(-3px);
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.08);
+}
+
+.gallery-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition:.3s;
+}
+
+.gallery-item:hover .gallery-overlay{
+    opacity:1;
+}
+
+.gallery-text{
+    text-align:center;
+    color:#fff;
+    z-index:10;
+}
+
+.gallery-text h3{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.gallery-text p{
+    font-size:13px;
+    color:#ddd;
+}
+
 /* ================= CONTACT ================= */
 
 .contact{
@@ -517,6 +583,10 @@ footer{
         height:300px;
     }
 
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
     .footer-grid{
         grid-template-columns:1fr 1fr;
     }
@@ -631,6 +701,14 @@ footer{
         height:190px;
     }
 
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-item{
+        height:300px;
+    }
+
     .contact-inner{
         flex-direction:column;
         text-align:center;
@@ -716,7 +794,7 @@ footer{
     <a href="#anasayfa" onclick="closeMenu()">ANA SAYFA</a>
     <a href="#urunler" onclick="closeMenu()">ÜRÜNLER</a>
     <a href="#kategoriler" onclick="closeMenu()">KATEGORİLER</a>
-    <a href="#yenisezon" onclick="closeMenu()">YENİ SEZON</a>
+    <a href="#galeri" onclick="closeMenu()">GALERİ</a>
     <a href="#iletisim" onclick="closeMenu()">İLETİŞİM</a>
 
 </div>
@@ -771,8 +849,8 @@ footer{
                 ALIŞVERİŞE BAŞLA
             </a>
 
-            <a href="#yenisezon" class="btn btn-outline">
-                YENİ SEZON
+            <a href="#galeri" class="btn btn-outline">
+                GALERİYİ KEŞFET
             </a>
 
         </div>
@@ -979,7 +1057,7 @@ footer{
 
             <div class="product-info">
 
-                <h3>TİŞÖRT</h3>
+                <h3>RESİMLİ TİŞÖRT</h3>
 
                 <div class="price">₺750,00</div>
 
@@ -995,7 +1073,7 @@ footer{
     </div>
 
 
-    <a href="#kategoriler" class="all-products">
+    <a href="#galeri" class="all-products">
         TÜM ÜRÜNLERİ GÖR
     </a>
 
@@ -1091,6 +1169,57 @@ footer{
 </section>
 
 
+<!-- ================= GALLERY ================= -->
+
+<section class="section" id="galeri">
+
+    <div class="section-head">
+
+        <div class="section-label">
+            TREND01
+        </div>
+
+        <h2>ÖZEL KOLEKSİYON GALERİ</h2>
+
+        <div class="gold-line"></div>
+
+    </div>
+
+    <div class="gallery">
+
+        <!-- GALERİ 1 -->
+        <div class="gallery-item">
+
+            <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/870f175f-16c3-4e51-a9e4-6711a36cfd06.jpeg" alt="Premium Koleksiyon">
+
+            <div class="gallery-overlay">
+                <div class="gallery-text">
+                    <h3>Premium Seçkisi</h3>
+                    <p>Sezon Trendleri</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- GALERİ 2 -->
+        <div class="gallery-item">
+
+            <img src="https://raw.githubusercontent.com/kozmoz0/TREND01/main/ca7cfe85-0bd4-477e-b32a-2e54c0f9e5c9.jpeg" alt="Dizayner Koleksiyonu">
+
+            <div class="gallery-overlay">
+                <div class="gallery-text">
+                    <h3>Dizayner Koleksiyonu</h3>
+                    <p>Eksklusif Tasarımlar</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 <!-- ================= CONTACT ================= -->
 
 <section class="contact" id="iletisim">
@@ -1145,6 +1274,7 @@ footer{
             <a href="#anasayfa">Ana Sayfa</a>
             <a href="#urunler">Ürünler</a>
             <a href="#kategoriler">Kategoriler</a>
+            <a href="#galeri">Galeri</a>
 
         </div>
 
