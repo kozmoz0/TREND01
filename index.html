@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TREND01 | Erkek Giyim</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#080808;
+    color:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    height:78px;
+    width:100%;
+    background:#050505;
+    border-bottom:1px solid #242424;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 35px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.menu{
+    font-size:25px;
+    cursor:pointer;
+    color:#ddd;
+}
+
+.menu span{
+    display:block;
+    width:24px;
+    height:2px;
+    background:#ddd;
+    margin:5px 0;
+}
+
+.logo{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    height:70px;
+    width:100px;
+    object-fit:contain;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.header-icon{
+    font-size:22px;
+    color:#ddd;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:520px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,.96) 0%,
+        rgba(0,0,0,.78) 40%,
+        rgba(0,0,0,.15) 100%
+    ),
+    url("https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1800&q=90");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.small-title{
+    color:#c69b55;
+    font-size:14px;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:clamp(45px,7vw,82px);
+    line-height:1;
+    margin-bottom:22px;
+}
+
+.hero p{
+    max-width:510px;
+    color:#d0d0d0;
+    line-height:1.7;
+    font-size:16px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:12px;
+    margin-top:28px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:13px;
+    transition:.3s;
+}
+
+.btn-gold{
+    background:#c69b55;
+    color:#000;
+}
+
+.btn-gold:hover{
+    background:#e0bb7b;
+}
+
+.btn-outline{
+    border:1px solid #aaa;
+    color:#fff;
+}
+
+.btn-outline:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* ================= BENEFITS ================= */
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-bottom:1px solid #272727;
+    border-top:1px solid #272727;
+    background:#0c0c0c;
+}
+
+.benefit{
+    padding:22px 20px;
+    border-right:1px solid #252525;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.benefit:last-child{
+    border-right:none;
+}
+
+.benefit-icon{
+    font-size:28px;
+    color:#c69b55;
+}
+
+.benefit h4{
+    font-size:13px;
+    margin-bottom:6px;
+}
+
+.benefit p{
+    font-size:11px;
+    color:#999;
+}
+
+/* ================= SECTIONS ================= */
+
+.section{
+    padding:75px 5%;
+}
+
+.section-head{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-label{
+    color:#c69b55;
+    font-size:12px;
+    letter-spacing:2px;
+    margin-bottom:8px;
+}
+
+.section-head h2{
+    font-size:31px;
+}
+
+.gold-line{
+    width:45px;
+    height:1px;
+    background:#c69b55;
+    margin:15px auto;
+}
+
+/* ================= PRODUCTS ================= */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+}
+
+.product{
+    background:#101010;
+    border:1px solid #222;
+    position:relative;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.product:hover{
+    transform:translateY(-5px);
+    border-color:#6e532f;
+}
+
+.product-img{
+    height:330px;
+    overflow:hidden;
+    position:relative;
+    background:#181818;
+}
+
+.product-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.product:hover .product-img img{
+    transform:scale(1.05);
+}
+
+.favorite{
+    position:absolute;
+    right:10px;
+    top:10px;
+    width:35px;
+    height:35px;
+    border-radius:5px;
+    background:rgba(0,0,0,.65);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:19px;
+}
+
+.product-info{
+    padding:18px;
+    text-align:center;
+}
+
+.product-info h3{
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#ddd;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.order{
+    width:100%;
+    padding:11px;
+    background:transparent;
+    border:1px solid #9b743d;
+    color:#d0a660;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.order:hover{
+    background:#c69b55;
+    color:#000;
+}
+
+/* ================= ALL PRODUCTS ================= */
+
+.all-products{
+    display:block;
+    width:max-content;
+    margin:35px auto 0;
+    border:1px solid #9b743d;
+    color:#c69b55;
+    padding:13px 25px;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.all-products:hover{
+    background:#c69b55;
+    color:#000;
+}
+
+/* ================= CATEGORIES ================= */
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:14px;
+}
+
+.category{
+    height:210px;
+    position:relative;
+    overflow:hidden;
+    border:1px solid #292929;
+    cursor:pointer;
+}
+
+.category img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.category:hover img{
+    transform:scale(1.08);
+}
+
+.category::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        transparent 35%,
+        rgba(0,0,0,.9)
+    );
+}
+
+.category-name{
+    position:absolute;
+    bottom:20px;
+    left:0;
+    width:100%;
+    text-align:center;
+    z-index:2;
+}
+
+.category-name strong{
+    display:block;
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+.category-name span{
+    font-size:12px;
+    color:#ddd;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#0d0d0d;
+    border-top:1px solid #222;
+    border-bottom:1px solid #222;
+    padding:60px 7%;
+}
+
+.contact-inner{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.contact-text h2{
+    font-size:28px;
+    margin-bottom:12px;
+}
+
+.contact-text p{
+    color:#999;
+    line-height:1.6;
+}
+
+.contact-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    width:300px;
+}
+
+.contact-btn{
+    padding:16px;
+    border-radius:4px;
+    text-decoration:none;
+    text-align:center;
+    color:#fff;
+    font-weight:bold;
+}
+
+.whatsapp{
+    background:#20c963;
+}
+
+.instagram{
+    background:linear-gradient(
+        45deg,
+        #833ab4,
+        #fd1d1d,
+        #fcb045
+    );
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#050505;
+    padding:55px 7% 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:40px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.footer-logo{
+    width:110px;
+    height:auto;
+    margin-bottom:20px;
+}
+
+.footer-column h3{
+    color:#fff;
+    font-size:13px;
+    margin-bottom:18px;
+}
+
+.footer-column a{
+    display:block;
+    text-decoration:none;
+    color:#777;
+    font-size:12px;
+    margin-bottom:11px;
+}
+
+.footer-column a:hover{
+    color:#c69b55;
+}
+
+.footer-bottom{
+    max-width:1200px;
+    margin:40px auto 0;
+    padding-top:20px;
+    border-top:1px solid #222;
+    text-align:center;
+    color:#555;
+    font-size:11px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    header{
+        padding:0 18px;
+    }
+
+    .benefits{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .benefit:nth-child(2){
+        border-right:none;
+    }
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .categories{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .product-img{
+        height:300px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    header{
+        height:68px;
+    }
+
+    .logo{
+        height:62px;
+        width:85px;
+    }
+
+    .header-right{
+        gap:12px;
+    }
+
+    .header-icon{
+        font-size:19px;
+    }
+
+    .hero{
+        min-height:570px;
+        background-position:65% center;
+    }
+
+    .hero-content{
+        padding-top:50px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        width:200px;
+    }
+
+    .btn{
+        text-align:center;
+    }
+
+    .benefits{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .benefit{
+        padding:18px 10px;
+    }
+
+    .benefit-icon{
+        font-size:21px;
+    }
+
+    .benefit h4{
+        font-size:11px;
+    }
+
+    .benefit p{
+        font-size:9px;
+    }
+
+    .section{
+        padding:55px 15px;
+    }
+
+    .section-head h2{
+        font-size:26px;
+    }
+
+    .products{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .product-img{
+        height:245px;
+    }
+
+    .product-info{
+        padding:13px 8px;
+    }
+
+    .product-info h3{
+        font-size:12px;
+    }
+
+    .price{
+        font-size:13px;
+    }
+
+    .order{
+        font-size:10px;
+        padding:10px 4px;
+    }
+
+    .categories{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .category{
+        height:190px;
+    }
+
+    .contact-inner{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .contact-buttons{
+        width:100%;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+        gap:30px 15px;
+    }
+
+}
+
+/* ================= MOBILE MENU ================= */
+
+.mobile-menu{
+    position:fixed;
+    top:0;
+    left:-100%;
+    width:80%;
+    max-width:320px;
+    height:100vh;
+    background:#0b0b0b;
+    z-index:2000;
+    padding:80px 30px;
+    transition:.35s;
+    border-right:1px solid #292929;
+}
+
+.mobile-menu.active{
+    left:0;
+}
+
+.close-menu{
+    position:absolute;
+    top:25px;
+    right:25px;
+    font-size:25px;
+    cursor:pointer;
+}
+
+.mobile-menu a{
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding:18px 0;
+    border-bottom:1px solid #222;
+    font-size:14px;
+}
+
+.mobile-menu a:hover{
+    color:#c69b55;
+}
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    z-index:1500;
+    display:none;
+}
+
+.overlay.active{
+    display:block;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div class="overlay" id="overlay"></div>
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <div class="close-menu" onclick="closeMenu()">×</div>
+
+    <a href="#anasayfa" onclick="closeMenu()">ANA SAYFA</a>
+    <a href="#urunler" onclick="closeMenu()">ÜRÜNLER</a>
+    <a href="#kategoriler" onclick="closeMenu()">KATEGORİLER</a>
+    <a href="#yenisezon" onclick="closeMenu()">YENİ SEZON</a>
+    <a href="#iletisim" onclick="closeMenu()">İLETİŞİM</a>
+
+</div>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="menu" onclick="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- TREND01 LOGO -->
+    <img src="Logo.png" class="logo" alt="TREND01">
+
+    <div class="header-right">
+
+        <div class="header-icon">⌕</div>
+        <div class="header-icon">♙</div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="anasayfa">
+
+    <div class="hero-content">
+
+        <div class="small-title">
+            TREND01
+        </div>
+
+        <h1>
+            Tarzını Yansıt.<br>
+            Kendini Göster.
+        </h1>
+
+        <p>
+            Modern, şık ve kaliteli erkek giyim ürünleri.
+            TREND01 ile her zaman bir adım önde ol.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#urunler" class="btn btn-gold">
+                ALIŞVERİŞE BAŞLA
+            </a>
+
+            <a href="#yenisezon" class="btn btn-outline">
+                YENİ SEZON
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BENEFITS ================= -->
+
+<div class="benefits">
+
+    <div class="benefit">
+
+        <div class="benefit-icon">🚚</div>
+
+        <div>
+            <h4>ÜCRETSİZ KARGO</h4>
+            <p>1000₺ ve üzeri siparişlerde</p>
+        </div>
+
+    </div>
+
+    <div class="benefit">
+
+        <div class="benefit-icon">↻</div>
+
+        <div>
+            <h4>KOLAY İADE</h4>
+            <p>14 gün içerisinde iade</p>
+        </div>
+
+    </div>
+
+    <div class="benefit">
+
+        <div class="benefit-icon">♢</div>
+
+        <div>
+            <h4>GÜVENLİ SİPARİŞ</h4>
+            <p>WhatsApp üzerinden kolay sipariş</p>
+        </div>
+
+    </div>
+
+    <div class="benefit">
+
+        <div class="benefit-icon">◉</div>
+
+        <div>
+            <h4>7/24 DESTEK</h4>
+            <p>Her zaman yanınızdayız</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="section" id="urunler">
+
+    <div class="section-head">
+
+        <div class="section-label">
+            TREND01 KOLEKSİYON
+        </div>
+
+        <h2>POPÜLER ÜRÜNLER</h2>
+
+        <div class="gold-line"></div>
+
+    </div>
+
+
+    <div class="products">
+
+
+        <!-- ÜRÜN 1 -->
+
+        <div class="product">
+
+            <div class="product-img">
+
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85">
+
+                <div class="favorite">♡</div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>OVERSIZE BASIC TİŞÖRT</h3>
+
+                <div class="price">₺499,00</div>
+
+                <button class="order"
+                onclick="order('OVERSIZE BASIC TİŞÖRT','499 TL')">
+                    SİPARİŞ VER
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ÜRÜN 2 -->
+
+        <div class="product">
+
+            <div class="product-img">
+
+                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=700&q=85">
+
+                <div class="favorite">♡</div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>KETEN GÖMLEK</h3>
+
+                <div class="price">₺799,00</div>
+
+                <button class="order"
+                onclick="order('KETEN GÖMLEK','799 TL')">
+                    SİPARİŞ VER
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ÜRÜN 3 -->
+
+        <div class="product">
+
+            <div class="product-img">
+
+                <img src="https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=700&q=85">
+
+                <div class="favorite">♡</div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>PARAŞÜT PANTOLON</h3>
+
+                <div class="price">₺899,00</div>
+
+                <button class="order"
+                onclick="order('PARAŞÜT PANTOLON','899 TL')">
+                    SİPARİŞ VER
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ÜRÜN 4 -->
+
+        <div class="product">
+
+            <div class="product-img">
+
+                <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=700&q=85">
+
+                <div class="favorite">♡</div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>PREMİUM SWEATSHIRT</h3>
+
+                <div class="price">₺999,00</div>
+
+                <button class="order"
+                onclick="order('PREMİUM SWEATSHIRT','999 TL')">
+                    SİPARİŞ VER
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ÜRÜN 5 -->
+
+        <div class="product">
+
+            <div class="product-img">
+
+                <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=85">
+
+                <div class="favorite">♡</div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>İÇİ KÜRKLÜ CEKET</h3>
+
+                <div class="price">₺1.499,00</div>
+
+                <button class="order"
+                onclick="order('İÇİ KÜRKLÜ CEKET','1499 TL')">
+                    SİPARİŞ VER
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a href="#kategoriler" class="all-products">
+        TÜM ÜRÜNLERİ GÖR
+    </a>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="section" id="kategoriler">
+
+    <div class="section-head">
+
+        <div class="section-label">
+            KATEGORİLER
+        </div>
+
+        <h2>KATEGORİLERİ KEŞFET</h2>
+
+        <div class="gold-line"></div>
+
+    </div>
+
+
+    <div class="categories">
+
+
+        <div class="category">
+
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80">
+
+            <div class="category-name">
+                <strong>TİŞÖRT</strong>
+                <span>Keşfet →</span>
+            </div>
+
+        </div>
+
+
+        <div class="category">
+
+            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80">
+
+            <div class="category-name">
+                <strong>GÖMLEK</strong>
+                <span>Keşfet →</span>
+            </div>
+
+        </div>
+
+
+        <div class="category">
+
+            <img src="https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=600&q=80">
+
+            <div class="category-name">
+                <strong>PANTOLON</strong>
+                <span>Keşfet →</span>
+            </div>
+
+        </div>
+
+
+        <div class="category">
+
+            <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&q=80">
+
+            <div class="category-name">
+                <strong>SWEATSHIRT</strong>
+                <span>Keşfet →</span>
+            </div>
+
+        </div>
+
+
+        <div class="category">
+
+            <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=600&q=80">
+
+            <div class="category-name">
+                <strong>CEKET</strong>
+                <span>Keşfet →</span>
+            </div>
+
+        </div>
+
+
+        <div class="category">
+
+            <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=600&q=80">
+
+            <div class="category-name">
+                <strong>YENİ SEZON</strong>
+                <span>Keşfet →</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="iletisim">
+
+    <div class="contact-inner">
+
+        <div class="contact-text">
+
+            <h2>
+                Sipariş vermek veya bilgi almak için
+                bizimle iletişime geçin!
+            </h2>
+
+            <p>
+                WhatsApp veya Instagram üzerinden
+                bize kolayca ulaşabilirsiniz.
+            </p>
+
+        </div>
+
+
+        <div class="contact-buttons">
+
+            <a
+                class="contact-btn whatsapp"
+                href="https://wa.me/905467950910"
+                target="_blank"
+            >
+                🟢 WHATSAPP'TAN SİPARİŞ VER
+            </a>
+
+
+            <a
+                class="contact-btn instagram"
+                href="https://www.instagram.com/trend_01_erkek_giyim"
+                target="_blank"
+            >
+                ◎ INSTAGRAM'A GİT
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div class="footer-column">
+
+            <img src="Logo.png" class="footer-logo" alt="TREND01">
+
+            <p style="color:#777;font-size:12px;line-height:1.7;">
+                Modern ve şık erkek giyiminin adresi.
+                Tarzını yansıt, kendini göster.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>KURUMSAL</h3>
+
+            <a href="#anasayfa">Ana Sayfa</a>
+            <a href="#urunler">Ürünler</a>
+            <a href="#iletisim">İletişim</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>KATEGORİLER</h3>
+
+            <a href="#kategoriler">Tişört</a>
+            <a href="#kategoriler">Gömlek</a>
+            <a href="#kategoriler">Pantolon</a>
+            <a href="#kategoriler">Sweatshirt</a>
+            <a href="#kategoriler">Ceket</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>BİZİ TAKİP EDİN</h3>
+
+            <a
+                href="https://www.instagram.com/trend_01_erkek_giyim"
+                target="_blank"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://wa.me/905467950910"
+                target="_blank"
+            >
+                WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 TREND01 - Tüm hakları saklıdır.
+
+    </div>
+
+</footer>
+
+
+<script>
+
+/* ================= MENU ================= */
+
+function openMenu(){
+
+    document.getElementById("mobileMenu")
+    .classList.add("active");
+
+    document.getElementById("overlay")
+    .classList.add("active");
+
+}
+
+function closeMenu(){
+
+    document.getElementById("mobileMenu")
+    .classList.remove("active");
+
+    document.getElementById("overlay")
+    .classList.remove("active");
+
+}
+
+document.getElementById("overlay")
+.addEventListener("click",closeMenu);
+
+
+/* ================= WHATSAPP SİPARİŞ ================= */
+
+function order(product,price){
+
+    const message =
+`Merhaba TREND01, siteden sipariş vermek istiyorum.
+
+Ürün: ${product}
+Fiyat: ${price}
+
+Beden ve renk seçenekleri hakkında bilgi alabilir miyim?`;
+
+    const url =
+    "https://wa.me/905467950910?text=" +
+    encodeURIComponent(message);
+
+    window.open(url,"_blank");
+
+}
+
+</script>
+
+</body>
+</html>
